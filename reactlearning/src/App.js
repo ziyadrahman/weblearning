@@ -1,8 +1,12 @@
 import './App.css'
+import Header from './components/Header';
 
+const data='Ziyad'
 function App() {
   return (
     <div>
+
+      <Header data={data} />
     
     {/* Inline CSS */}
 
@@ -13,7 +17,7 @@ function App() {
 
     {/* Component */}
    <Hello/>
-   <Hello/>
+ 
 
 
     </div>
