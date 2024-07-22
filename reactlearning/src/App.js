@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    
+    {/* Inline CSS */}
+
+    <h1 style={{backgroundColor:'red',padding:'10px'}}>Inline CSS</h1>
+
+    {/* External CSS */}
+    <h1 className='header'>External CSS</h1>
+
+    {/* Component */}
+   <Hello/>
+   <Hello/>
+
+
     </div>
+  );
+}
+function Hello()
+{
+  return(
+    <h1 style={{backgroundColor:'blue',padding:'10px'}}>This a Component</h1>
   );
 }
 
 export default App;
+
+
+

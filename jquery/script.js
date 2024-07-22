@@ -14,8 +14,12 @@ $(document).ready(function(){
     }
     });
 
-   $("#changeBg").click(function () { 
+   $("#changeBg").mouseenter(function () { 
    $(".body").css("background-color","yellow");
     });
+
+    $("#changeBg").mouseleave(function () { 
+        $(".body").css("background-color","white");
+         });
 
 });
