@@ -9,7 +9,7 @@ function App() {
   const [count,setCount]=useState(0);
   
 
-  /* obj*/
+  /* For Spread Operator Using*/
   let datas ={
     title:'Compoenent Counter',
     count,
@@ -41,7 +41,9 @@ function App() {
    <p>Counter:{count}</p>
 
 
+    {/*Spread Operator Using*/}
    <Counter {...datas} />
+
    <button onClick={()=>setCount(count+1)}>Increment</button>
    <button onClick={()=>setCount(count-1)}>Decrement</button>
    <button onClick={()=>setCount(0)}>Reset</button>
