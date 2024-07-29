@@ -1,13 +1,22 @@
 import './App.css'
 import Header from './components/Header';
+import Counter from'./components/Counter';
 import React,{useState} from 'react';
 
 const data='Ziyad'
 function App() {
 
   const [count,setCount]=useState(0);
+  
 
+  /* obj*/
+  let datas ={
+    title:'Compoenent Counter',
+    count,
+    text:' tests'
+  }
 
+  
 
 
   return (
@@ -30,6 +39,9 @@ function App() {
 
    <p>Counter:{count}</p>
    <p>Counter:{count}</p>
+
+
+   <Counter {...datas} />
    <button onClick={()=>setCount(count+1)}>Increment</button>
    <button onClick={()=>setCount(count-1)}>Decrement</button>
    <button onClick={()=>setCount(0)}>Reset</button>
