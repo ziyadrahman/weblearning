@@ -2,6 +2,7 @@ import './App.css'
 import Header from './components/Header';
 import Counter from'./components/Counter';
 import React,{useState} from 'react';
+import Employee from './components/Employee';
 
 const data='Ziyad'
 function App() {
@@ -16,11 +17,20 @@ function App() {
     text:' tests'
   }
 
+  let emp=[
+    {name:'ziyad',age:28},
+    {name:'emp2',age:18},
+    {name:'emp3',age:18},
+    {name:'emp4',age:18},
+    {name:'emp5',age:18},
+  ];
+
   
 
 
   return (
     <div>
+
 
      
 
@@ -48,7 +58,16 @@ function App() {
    <button onClick={()=>setCount(count-1)}>Decrement</button>
    <button onClick={()=>setCount(0)}>Reset</button>
 
+   <hr></hr>
 
+   <h1>Employee - Map Example</h1>
+
+   {/*Below Map Loop n time of emp length*/}
+   {
+    emp.map((obj,index)=> <Employee key={index} {...obj}/>
+      )
+    }
+   
 
     </div>
   );
