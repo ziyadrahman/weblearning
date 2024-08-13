@@ -2,7 +2,11 @@
 
 function Header(props) {
 
-    return(<h1>Hello Iam {props.data} </h1>)
+    return(<div className="header">
+<h1> {props.title} </h1>
+    </div>
+    
+    )
   }
 
 

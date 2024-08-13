@@ -1,13 +1,28 @@
 import './App.css'
 import Header from './components/Header';
 import Counter from'./components/Counter';
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import Employee from './components/Employee';
 
-const data='Ziyad'
+const title='Rootments'
 function App() {
 
   const [count,setCount]=useState(0);
+
+
+useEffect(()=>{
+  console.log('Component Mounted');
+
+
+},[]);
+
+useEffect(()=>{
+ 
+
+  return () => {
+    console.log('Component Unmounted');
+  };
+},[count]);
   
 
   /* For Spread Operator Using*/
@@ -34,7 +49,7 @@ function App() {
 
      
 
-      <Header data={data} />
+      <Header title={title} />
     
     {/* Inline CSS */}
 

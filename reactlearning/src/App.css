@@ -1,5 +1,9 @@
 .header{
- background-color: aqua;
- margin: 0px;
+ background-color: rgb(163, 255, 217);
+ /* margin: 5px; */
  padding: 10px;
+ color: black;
+}
+body{
+    margin: 0px;
 }
